@@ -1,0 +1,48 @@
+---------------------------------------------------------------
+[ 2019-02-06T15:39:52+08:00 ] 127.0.0.1 GET z.cn/api/v1/theme/1?XDEBUG_SESSION_START=19478
+[运行时间：0.409998s] [吞吐率：2.44req/s] [内存消耗：2,957.27kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.025378s ] mysql:host=127.0.0.1;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.070881s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.004052s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme_product` [ RunTime:0.002224s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.002005s ]
+[ sql ] [ SQL ] SELECT `product`.*,pivot.theme_id AS pivot__theme_id,pivot.product_id AS pivot__product_id FROM `product` INNER JOIN `theme_product` `pivot` ON `pivot`.`product_id`=`product`.`id` WHERE  `pivot`.`theme_id` = 1 [ RunTime:0.003972s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.001741s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` = 49 [ RunTime:0.000740s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` = 16 [ RunTime:0.000710s ]
+---------------------------------------------------------------
+[ 2019-02-06T16:48:52+08:00 ] 127.0.0.1 GET z.cn/api/v1/product/recent?count=2&XDEBUG_SESSION_START=18369
+[运行时间：0.043209s] [吞吐率：23.14req/s] [内存消耗：2,646.80kb] [文件加载：40]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000775s ] mysql:host=127.0.0.1;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.002131s ]
+[ sql ] [ SQL ] SELECT * FROM `product` ORDER BY `create_time` DESC LIMIT 2 [ RunTime:0.003821s ]
+---------------------------------------------------------------
+[ 2019-02-06T16:49:08+08:00 ] 127.0.0.1 GET z.cn/api/v1/product/recent?count=1&XDEBUG_SESSION_START=18369
+[运行时间：0.072381s] [吞吐率：13.82req/s] [内存消耗：2,646.45kb] [文件加载：40]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000787s ] mysql:host=127.0.0.1;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.004291s ]
+[ sql ] [ SQL ] SELECT * FROM `product` ORDER BY `create_time` DESC LIMIT 1 [ RunTime:0.002639s ]
+---------------------------------------------------------------
+[ 2019-02-06T17:06:21+08:00 ] 127.0.0.1 GET z.cn/api/v1/product/recent?count=3&XDEBUG_SESSION_START=18369
+[运行时间：511.376799s] [吞吐率：0.00req/s] [内存消耗：2,764.09kb] [文件加载：42]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000845s ] mysql:host=127.0.0.1;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.002953s ]
+[ sql ] [ SQL ] SELECT * FROM `product` ORDER BY `create_time` DESC LIMIT 3 [ RunTime:0.001048s ]
+---------------------------------------------------------------
+[ 2019-02-06T17:07:48+08:00 ] 127.0.0.1 GET z.cn/api/v1/product/recent?count=3&XDEBUG_SESSION_START=18369
+[运行时间：0.159731s] [吞吐率：6.26req/s] [内存消耗：2,763.30kb] [文件加载：42]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000724s ] mysql:host=127.0.0.1;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.004047s ]
+[ sql ] [ SQL ] SELECT * FROM `product` ORDER BY `create_time` DESC LIMIT 3 [ RunTime:0.000719s ]
+---------------------------------------------------------------
+[ 2019-02-06T19:40:33+08:00 ] 127.0.0.1 GET z.cn/api/v1/product/recent?count=3&XDEBUG_SESSION_START=18369
+[运行时间：0.423614s] [吞吐率：2.36req/s] [内存消耗：2,762.78kb] [文件加载：42]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.057861s ] mysql:host=127.0.0.1;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.068878s ]
+[ sql ] [ SQL ] SELECT * FROM `product` ORDER BY `create_time` DESC LIMIT 3 [ RunTime:0.001377s ]
+---------------------------------------------------------------
+[ 2019-02-06T19:40:39+08:00 ] 127.0.0.1 GET z.cn/api/v1/product/recent?count=3&XDEBUG_SESSION_START=18369
+[运行时间：0.057825s] [吞吐率：17.29req/s] [内存消耗：2,762.21kb] [文件加载：42]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001249s ] mysql:host=127.0.0.1;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.003634s ]
+[ sql ] [ SQL ] SELECT * FROM `product` ORDER BY `create_time` DESC LIMIT 3 [ RunTime:0.000813s ]

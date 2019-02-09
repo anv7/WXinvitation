@@ -1,0 +1,36 @@
+---------------------------------------------------------------
+[ 2019-02-08T15:34:12+08:00 ] 127.0.0.1 POST z.cn/api/v1/token/user?XDEBUG_SESSION_START=17518
+[运行时间：23.944049s] [吞吐率：0.04req/s] [内存消耗：2,830.36kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000662s ] mysql:host=127.0.0.1;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.001712s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oP6yK5WPDD2M4hlyEDwxloum3N1I' LIMIT 1 [ RunTime:0.000666s ]
+---------------------------------------------------------------
+[ 2019-02-08T15:34:40+08:00 ] 127.0.0.1 POST z.cn/api/v1/token/user?XDEBUG_SESSION_START=17518
+[运行时间：0.545807s] [吞吐率：1.83req/s] [内存消耗：2,819.48kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000890s ] mysql:host=127.0.0.1;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.002230s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oP6yK5WPDD2M4hlyEDwxloum3N1I' LIMIT 1 [ RunTime:0.000731s ]
+---------------------------------------------------------------
+[ 2019-02-08T15:35:36+08:00 ] 127.0.0.1 POST z.cn/api/v1/token/user?XDEBUG_SESSION_START=17518
+[运行时间：23.817172s] [吞吐率：0.04req/s] [内存消耗：2,827.30kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000742s ] mysql:host=127.0.0.1;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.002013s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oP6yK5WPDD2M4hlyEDwxloum3N1I' LIMIT 1 [ RunTime:0.000697s ]
+---------------------------------------------------------------
+[ 2019-02-08T15:36:06+08:00 ] 127.0.0.1 POST z.cn/api/v1/token/user?XDEBUG_SESSION_START=17518
+[运行时间：26.950936s] [吞吐率：0.04req/s] [内存消耗：2,825.13kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000875s ] mysql:host=127.0.0.1;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.002191s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oP6yK5WPDD2M4hlyEDwxloum3N1I' LIMIT 1 [ RunTime:0.000875s ]
+---------------------------------------------------------------
+[ 2019-02-08T15:38:33+08:00 ] 127.0.0.1 POST z.cn/api/v1/token/user?XDEBUG_SESSION_START=17518
+[运行时间：145.085383s] [吞吐率：0.01req/s] [内存消耗：2,830.80kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000901s ] mysql:host=127.0.0.1;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.002278s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oP6yK5WPDD2M4hlyEDwxloum3N1I' LIMIT 1 [ RunTime:0.000687s ]
+---------------------------------------------------------------
+[ 2019-02-08T15:38:38+08:00 ] 127.0.0.1 POST z.cn/api/v1/token/user?XDEBUG_SESSION_START=17518
+[运行时间：0.527747s] [吞吐率：1.89req/s] [内存消耗：2,819.48kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000800s ] mysql:host=127.0.0.1;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.001668s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oP6yK5WPDD2M4hlyEDwxloum3N1I' LIMIT 1 [ RunTime:0.000783s ]

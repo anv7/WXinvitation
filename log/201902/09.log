@@ -1,0 +1,18 @@
+---------------------------------------------------------------
+[ 2019-02-09T18:53:04+08:00 ] 127.0.0.1 POST z.cn/api/v1/token/app?XDEBUG_SESSION_START=19598
+[运行时间：48.206151s] [吞吐率：0.02req/s] [内存消耗：2,828.86kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007226s ] mysql:host=127.0.0.1;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `third_app` [ RunTime:0.016588s ]
+[ sql ] [ SQL ] SELECT * FROM `third_app` WHERE  `app_id` = 'starcraft'  AND `app_secret` = '777*777' LIMIT 1 [ RunTime:0.001597s ]
+---------------------------------------------------------------
+[ 2019-02-09T18:53:42+08:00 ] 127.0.0.1 POST z.cn/api/v1/token/app?XDEBUG_SESSION_START=19598
+[运行时间：8.602468s] [吞吐率：0.12req/s] [内存消耗：2,819.16kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000864s ] mysql:host=127.0.0.1;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `third_app` [ RunTime:0.006086s ]
+[ sql ] [ SQL ] SELECT * FROM `third_app` WHERE  `app_id` = 'starcraft'  AND `app_secret` = '777*777' LIMIT 1 [ RunTime:0.001170s ]
+---------------------------------------------------------------
+[ 2019-02-09T18:54:01+08:00 ] 127.0.0.1 POST z.cn/api/v1/token/app
+[运行时间：0.190359s] [吞吐率：5.25req/s] [内存消耗：2,817.23kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000854s ] mysql:host=127.0.0.1;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `third_app` [ RunTime:0.005240s ]
+[ sql ] [ SQL ] SELECT * FROM `third_app` WHERE  `app_id` = 'starcraft'  AND `app_secret` = '777*777' LIMIT 1 [ RunTime:0.000781s ]

@@ -1,0 +1,72 @@
+---------------------------------------------------------------
+[ 2019-02-07T00:00:38+08:00 ] 127.0.0.1 GET z.cn/api/v1/category/all?XDEBUG_SESSION_START=18369
+[运行时间：0.051931s] [吞吐率：19.26req/s] [内存消耗：2,668.51kb] [文件加载：43]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000839s ] mysql:host=127.0.0.1;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.002724s ]
+[ sql ] [ SQL ] SELECT * FROM `category` [ RunTime:0.000678s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.001759s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (6,5,7,4,8,9) [ RunTime:0.000784s ]
+---------------------------------------------------------------
+[ 2019-02-07T00:01:20+08:00 ] 127.0.0.1 GET z.cn/api/v1/category/all?XDEBUG_SESSION_START=18369
+[运行时间：0.052773s] [吞吐率：18.95req/s] [内存消耗：2,668.52kb] [文件加载：43]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000739s ] mysql:host=127.0.0.1;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.002502s ]
+[ sql ] [ SQL ] SELECT * FROM `category` [ RunTime:0.001099s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.001484s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (6,5,7,4,8,9) [ RunTime:0.000761s ]
+---------------------------------------------------------------
+[ 2019-02-07T00:01:22+08:00 ] 127.0.0.1 GET z.cn/api/v1/category/all?XDEBUG_SESSION_START=18369
+[运行时间：0.042898s] [吞吐率：23.31req/s] [内存消耗：2,668.52kb] [文件加载：43]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000811s ] mysql:host=127.0.0.1;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.002032s ]
+[ sql ] [ SQL ] SELECT * FROM `category` [ RunTime:0.000745s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.001485s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (6,5,7,4,8,9) [ RunTime:0.001041s ]
+---------------------------------------------------------------
+[ 2019-02-07T00:02:17+08:00 ] 127.0.0.1 GET z.cn/api/v1/category/all?XDEBUG_SESSION_START=18369
+[运行时间：0.050950s] [吞吐率：19.63req/s] [内存消耗：2,668.52kb] [文件加载：43]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000706s ] mysql:host=127.0.0.1;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.003252s ]
+[ sql ] [ SQL ] SELECT * FROM `category` [ RunTime:0.000669s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.001590s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (6,5,7,4,8,9) [ RunTime:0.000783s ]
+---------------------------------------------------------------
+[ 2019-02-07T00:03:54+08:00 ] 127.0.0.1 GET z.cn/api/v1/category/all?XDEBUG_SESSION_START=18369
+[运行时间：0.075289s] [吞吐率：13.28req/s] [内存消耗：2,669.09kb] [文件加载：43]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000806s ] mysql:host=127.0.0.1;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.002927s ]
+[ sql ] [ SQL ] SELECT * FROM `category` [ RunTime:0.001148s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.002855s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (6,5,7,4,8,9) [ RunTime:0.001195s ]
+---------------------------------------------------------------
+[ 2019-02-07T00:05:39+08:00 ] 127.0.0.1 GET z.cn/api/v1/category/all?XDEBUG_SESSION_START=18369
+[运行时间：0.049021s] [吞吐率：20.40req/s] [内存消耗：2,669.09kb] [文件加载：43]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000749s ] mysql:host=127.0.0.1;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.002076s ]
+[ sql ] [ SQL ] SELECT * FROM `category` [ RunTime:0.000790s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.001588s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (6,5,7,4,8,9) [ RunTime:0.001102s ]
+---------------------------------------------------------------
+[ 2019-02-07T00:05:58+08:00 ] 127.0.0.1 GET z.cn/api/v1/category/all?XDEBUG_SESSION_START=18369
+[运行时间：0.055794s] [吞吐率：17.92req/s] [内存消耗：2,669.09kb] [文件加载：43]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001018s ] mysql:host=127.0.0.1;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.004396s ]
+[ sql ] [ SQL ] SELECT * FROM `category` [ RunTime:0.000729s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.001429s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (6,5,7,4,8,9) [ RunTime:0.000888s ]
+---------------------------------------------------------------
+[ 2019-02-07T00:06:59+08:00 ] 127.0.0.1 GET z.cn/api/v1/category/all?XDEBUG_SESSION_START=18369
+[运行时间：0.047283s] [吞吐率：21.15req/s] [内存消耗：2,668.36kb] [文件加载：43]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000697s ] mysql:host=127.0.0.1;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.003812s ]
+[ sql ] [ SQL ] SELECT * FROM `category` [ RunTime:0.000900s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.001361s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (6,5,7,4,8,9) [ RunTime:0.000815s ]
+---------------------------------------------------------------
+[ 2019-02-07T00:07:07+08:00 ] 127.0.0.1 GET z.cn/api/v1/category/all?XDEBUG_SESSION_START=18369
+[运行时间：0.063813s] [吞吐率：15.67req/s] [内存消耗：2,669.09kb] [文件加载：43]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000675s ] mysql:host=127.0.0.1;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.002304s ]
+[ sql ] [ SQL ] SELECT * FROM `category` [ RunTime:0.000852s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.001871s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (6,5,7,4,8,9) [ RunTime:0.002389s ]

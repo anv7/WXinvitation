@@ -1,0 +1,239 @@
+---------------------------------------------------------------
+[ 2019-02-05T17:22:14+08:00 ] 127.0.0.1 GET z.cn/api/v1/theme?ids=1,2,3&XDEBUG_SESSION_START=19478
+[运行时间：0.168686s] [吞吐率：5.93req/s] [内存消耗：2,799.00kb] [文件加载：44]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004869s ] mysql:host=127.0.0.1;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.011035s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE  `id` IN (1,2,3) [ RunTime:0.004670s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.003971s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (49,50,18) [ RunTime:0.000830s ]
+---------------------------------------------------------------
+[ 2019-02-05T17:30:08+08:00 ] 127.0.0.1 GET z.cn/api/v1/theme?ids=1,2,3&XDEBUG_SESSION_START=19478
+[运行时间：3.801879s] [吞吐率：0.26req/s] [内存消耗：2,804.05kb] [文件加载：44]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000688s ] mysql:host=127.0.0.1;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.002551s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE  `id` IN (1,2,3) [ RunTime:0.000942s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.001415s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (49,50,18) [ RunTime:0.000709s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (49,50,18) [ RunTime:0.000713s ]
+---------------------------------------------------------------
+[ 2019-02-05T17:33:18+08:00 ] 127.0.0.1 GET z.cn/api/v1/theme?ids=1,2,3&XDEBUG_SESSION_START=19478
+[运行时间：0.058613s] [吞吐率：17.06req/s] [内存消耗：2,802.70kb] [文件加载：44]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000866s ] mysql:host=127.0.0.1;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.004379s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE  `id` IN (1,2,3) [ RunTime:0.000984s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.001885s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (49,50,18) [ RunTime:0.004505s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (49,50,18) [ RunTime:0.000740s ]
+---------------------------------------------------------------
+[ 2019-02-05T17:40:10+08:00 ] 127.0.0.1 GET z.cn/api/v1/theme?ids=1,2,3&XDEBUG_SESSION_START=19478
+[运行时间：0.120277s] [吞吐率：8.31req/s] [内存消耗：2,802.70kb] [文件加载：44]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001067s ] mysql:host=127.0.0.1;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.003174s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE  `id` IN (1,2,3) [ RunTime:0.000856s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.001593s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (49,50,18) [ RunTime:0.000760s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (16,17,18) [ RunTime:0.000765s ]
+---------------------------------------------------------------
+[ 2019-02-05T19:59:39+08:00 ] 127.0.0.1 GET z.cn/api/v1/theme/2?XDEBUG_SESSION_START=19478
+[运行时间：0.080622s] [吞吐率：12.40req/s] [内存消耗：2,942.91kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001154s ] mysql:host=127.0.0.1;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.002472s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000906s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme_product` [ RunTime:0.001619s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.001492s ]
+[ sql ] [ SQL ] SELECT `product`.*,pivot.theme_id AS pivot__theme_id,pivot.product_id AS pivot__product_id FROM `product` INNER JOIN `theme_product` `pivot` ON `pivot`.`theme_id`=`product`.`id` WHERE  `pivot`.`product_id` = 2 [ RunTime:0.000962s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.001751s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` = 17 [ RunTime:0.000771s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` = 50 [ RunTime:0.000655s ]
+---------------------------------------------------------------
+[ 2019-02-05T20:00:07+08:00 ] 127.0.0.1 GET z.cn/api/v1/theme/1?XDEBUG_SESSION_START=19478
+[运行时间：0.060574s] [吞吐率：16.51req/s] [内存消耗：2,938.86kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000720s ] mysql:host=127.0.0.1;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.002873s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000955s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme_product` [ RunTime:0.001342s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.001891s ]
+[ sql ] [ SQL ] SELECT `product`.*,pivot.theme_id AS pivot__theme_id,pivot.product_id AS pivot__product_id FROM `product` INNER JOIN `theme_product` `pivot` ON `pivot`.`theme_id`=`product`.`id` WHERE  `pivot`.`product_id` = 1 [ RunTime:0.000905s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.001427s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` = 16 [ RunTime:0.000755s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` = 49 [ RunTime:0.000692s ]
+---------------------------------------------------------------
+[ 2019-02-05T20:01:33+08:00 ] 127.0.0.1 GET z.cn/api/v1/theme/1?XDEBUG_SESSION_START=19478
+[运行时间：0.070490s] [吞吐率：14.19req/s] [内存消耗：2,938.86kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000807s ] mysql:host=127.0.0.1;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.002242s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000731s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme_product` [ RunTime:0.002257s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.001864s ]
+[ sql ] [ SQL ] SELECT `product`.*,pivot.theme_id AS pivot__theme_id,pivot.product_id AS pivot__product_id FROM `product` INNER JOIN `theme_product` `pivot` ON `pivot`.`theme_id`=`product`.`id` WHERE  `pivot`.`product_id` = 1 [ RunTime:0.000878s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.001400s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` = 49 [ RunTime:0.000656s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` = 16 [ RunTime:0.000706s ]
+---------------------------------------------------------------
+[ 2019-02-05T20:01:46+08:00 ] 127.0.0.1 GET z.cn/api/v1/theme/1?XDEBUG_SESSION_START=19478
+[运行时间：0.061247s] [吞吐率：16.33req/s] [内存消耗：2,938.89kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000602s ] mysql:host=127.0.0.1;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.002747s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000798s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme_product` [ RunTime:0.001330s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.001518s ]
+[ sql ] [ SQL ] SELECT `product`.*,pivot.theme_id AS pivot__theme_id,pivot.product_id AS pivot__product_id FROM `product` INNER JOIN `theme_product` `pivot` ON `pivot`.`theme_id`=`product`.`id` WHERE  `pivot`.`product_id` = 1 [ RunTime:0.000943s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.003448s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` = 49 [ RunTime:0.000684s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` = 16 [ RunTime:0.000610s ]
+---------------------------------------------------------------
+[ 2019-02-05T20:04:45+08:00 ] 127.0.0.1 GET z.cn/api/v1/theme/1?XDEBUG_SESSION_START=19478
+[运行时间：80.560037s] [吞吐率：0.01req/s] [内存消耗：2,950.26kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000594s ] mysql:host=127.0.0.1;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.002590s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000752s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme_product` [ RunTime:0.001785s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.002061s ]
+[ sql ] [ SQL ] SELECT `product`.*,pivot.theme_id AS pivot__theme_id,pivot.product_id AS pivot__product_id FROM `product` INNER JOIN `theme_product` `pivot` ON `pivot`.`theme_id`=`product`.`id` WHERE  `pivot`.`product_id` = 1 [ RunTime:0.002664s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.001713s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` = 49 [ RunTime:0.000749s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` = 16 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-02-05T20:05:32+08:00 ] 127.0.0.1 GET z.cn/api/v1/theme/1?XDEBUG_SESSION_START=19478
+[运行时间：40.823434s] [吞吐率：0.02req/s] [内存消耗：2,942.72kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000653s ] mysql:host=127.0.0.1;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.001765s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001453s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme_product` [ RunTime:0.002043s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.001445s ]
+[ sql ] [ SQL ] SELECT `product`.*,pivot.theme_id AS pivot__theme_id,pivot.product_id AS pivot__product_id FROM `product` INNER JOIN `theme_product` `pivot` ON `pivot`.`theme_id`=`product`.`id` WHERE  `pivot`.`product_id` = 1 [ RunTime:0.000877s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.001378s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` = 49 [ RunTime:0.000691s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` = 16 [ RunTime:0.000670s ]
+---------------------------------------------------------------
+[ 2019-02-05T20:10:17+08:00 ] 127.0.0.1 GET z.cn/api/v1/theme/1?XDEBUG_SESSION_START=19478
+[运行时间：7.414040s] [吞吐率：0.13req/s] [内存消耗：2,959.08kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000655s ] mysql:host=127.0.0.1;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.001520s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000657s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme_product` [ RunTime:0.001565s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.002588s ]
+[ sql ] [ SQL ] SELECT `product`.*,pivot.theme_id AS pivot__theme_id,pivot.product_id AS pivot__product_id FROM `product` INNER JOIN `theme_product` `pivot` ON `pivot`.`product_id`=`product`.`id` WHERE  `pivot`.`theme_id` = 1 [ RunTime:0.000941s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.001399s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` = 49 [ RunTime:0.000584s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` = 16 [ RunTime:0.000586s ]
+---------------------------------------------------------------
+[ 2019-02-05T21:21:37+08:00 ] 127.0.0.1 GET z.cn/api/v1/theme/1?XDEBUG_SESSION_START=19478
+[运行时间：0.159947s] [吞吐率：6.25req/s] [内存消耗：2,956.39kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003188s ] mysql:host=127.0.0.1;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.002096s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000647s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme_product` [ RunTime:0.001430s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.001365s ]
+[ sql ] [ SQL ] SELECT `product`.*,pivot.theme_id AS pivot__theme_id,pivot.product_id AS pivot__product_id FROM `product` INNER JOIN `theme_product` `pivot` ON `pivot`.`product_id`=`product`.`id` WHERE  `pivot`.`theme_id` = 1 [ RunTime:0.001061s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.001349s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` = 49 [ RunTime:0.000595s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` = 16 [ RunTime:0.000652s ]
+---------------------------------------------------------------
+[ 2019-02-05T21:22:27+08:00 ] 127.0.0.1 GET z.cn/api/v1/theme/1?XDEBUG_SESSION_START=19478
+[运行时间：0.134978s] [吞吐率：7.41req/s] [内存消耗：2,956.68kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000697s ] mysql:host=127.0.0.1;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.002967s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000944s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme_product` [ RunTime:0.001943s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.002013s ]
+[ sql ] [ SQL ] SELECT `product`.*,pivot.theme_id AS pivot__theme_id,pivot.product_id AS pivot__product_id FROM `product` INNER JOIN `theme_product` `pivot` ON `pivot`.`product_id`=`product`.`id` WHERE  `pivot`.`theme_id` = 1 [ RunTime:0.001011s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.002656s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` = 49 [ RunTime:0.000695s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` = 16 [ RunTime:0.000737s ]
+---------------------------------------------------------------
+[ 2019-02-05T21:22:58+08:00 ] 127.0.0.1 GET z.cn/api/v1/theme/1?XDEBUG_SESSION_START=19478
+[运行时间：0.128575s] [吞吐率：7.78req/s] [内存消耗：2,956.74kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000689s ] mysql:host=127.0.0.1;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.004677s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001102s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme_product` [ RunTime:0.002409s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.002081s ]
+[ sql ] [ SQL ] SELECT `product`.*,pivot.theme_id AS pivot__theme_id,pivot.product_id AS pivot__product_id FROM `product` INNER JOIN `theme_product` `pivot` ON `pivot`.`product_id`=`product`.`id` WHERE  `pivot`.`theme_id` = 1 [ RunTime:0.001063s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.001815s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` = 49 [ RunTime:0.001405s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` = 16 [ RunTime:0.000740s ]
+---------------------------------------------------------------
+[ 2019-02-05T21:27:44+08:00 ] 127.0.0.1 GET z.cn/api/v1/theme/1?XDEBUG_SESSION_START=19478
+[运行时间：0.069161s] [吞吐率：14.46req/s] [内存消耗：2,957.20kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000663s ] mysql:host=127.0.0.1;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.002225s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000599s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme_product` [ RunTime:0.001605s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.001437s ]
+[ sql ] [ SQL ] SELECT `product`.*,pivot.theme_id AS pivot__theme_id,pivot.product_id AS pivot__product_id FROM `product` INNER JOIN `theme_product` `pivot` ON `pivot`.`product_id`=`product`.`id` WHERE  `pivot`.`theme_id` = 1 [ RunTime:0.001435s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.001806s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` = 49 [ RunTime:0.000639s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` = 16 [ RunTime:0.000598s ]
+---------------------------------------------------------------
+[ 2019-02-05T21:28:32+08:00 ] 127.0.0.1 GET z.cn/api/v1/theme/1?XDEBUG_SESSION_START=19478
+[运行时间：0.160636s] [吞吐率：6.23req/s] [内存消耗：2,957.20kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000642s ] mysql:host=127.0.0.1;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.001504s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000689s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme_product` [ RunTime:0.001324s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.001344s ]
+[ sql ] [ SQL ] SELECT `product`.*,pivot.theme_id AS pivot__theme_id,pivot.product_id AS pivot__product_id FROM `product` INNER JOIN `theme_product` `pivot` ON `pivot`.`product_id`=`product`.`id` WHERE  `pivot`.`theme_id` = 1 [ RunTime:0.000896s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.005344s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` = 49 [ RunTime:0.000623s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` = 16 [ RunTime:0.000691s ]
+---------------------------------------------------------------
+[ 2019-02-05T21:28:37+08:00 ] 127.0.0.1 GET z.cn/api/v1/theme/1?XDEBUG_SESSION_START=19478
+[运行时间：0.061192s] [吞吐率：16.34req/s] [内存消耗：2,957.20kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000690s ] mysql:host=127.0.0.1;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.001482s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000662s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme_product` [ RunTime:0.001292s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.001470s ]
+[ sql ] [ SQL ] SELECT `product`.*,pivot.theme_id AS pivot__theme_id,pivot.product_id AS pivot__product_id FROM `product` INNER JOIN `theme_product` `pivot` ON `pivot`.`product_id`=`product`.`id` WHERE  `pivot`.`theme_id` = 1 [ RunTime:0.002153s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.001676s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` = 49 [ RunTime:0.000634s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` = 16 [ RunTime:0.000695s ]
+---------------------------------------------------------------
+[ 2019-02-05T21:29:39+08:00 ] 127.0.0.1 GET z.cn/api/v1/theme/1?XDEBUG_SESSION_START=19478
+[运行时间：0.057389s] [吞吐率：17.42req/s] [内存消耗：2,957.45kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000662s ] mysql:host=127.0.0.1;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.001428s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000805s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme_product` [ RunTime:0.001489s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.001325s ]
+[ sql ] [ SQL ] SELECT `product`.*,pivot.theme_id AS pivot__theme_id,pivot.product_id AS pivot__product_id FROM `product` INNER JOIN `theme_product` `pivot` ON `pivot`.`product_id`=`product`.`id` WHERE  `pivot`.`theme_id` = 1 [ RunTime:0.001977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.001433s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` = 49 [ RunTime:0.000596s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` = 16 [ RunTime:0.000730s ]
+---------------------------------------------------------------
+[ 2019-02-05T21:29:58+08:00 ] 127.0.0.1 GET z.cn/api/v1/theme/1?XDEBUG_SESSION_START=19478
+[运行时间：0.098890s] [吞吐率：10.11req/s] [内存消耗：2,957.40kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000702s ] mysql:host=127.0.0.1;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.001605s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001429s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme_product` [ RunTime:0.001753s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.002173s ]
+[ sql ] [ SQL ] SELECT `product`.*,pivot.theme_id AS pivot__theme_id,pivot.product_id AS pivot__product_id FROM `product` INNER JOIN `theme_product` `pivot` ON `pivot`.`product_id`=`product`.`id` WHERE  `pivot`.`theme_id` = 1 [ RunTime:0.001290s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.001391s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` = 49 [ RunTime:0.001860s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` = 16 [ RunTime:0.001078s ]
+---------------------------------------------------------------
+[ 2019-02-05T21:33:55+08:00 ] 127.0.0.1 GET z.cn/api/v1/theme/1?XDEBUG_SESSION_START=19478
+[运行时间：0.128278s] [吞吐率：7.80req/s] [内存消耗：2,957.45kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000904s ] mysql:host=127.0.0.1;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.002896s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001017s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme_product` [ RunTime:0.001446s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.001524s ]
+[ sql ] [ SQL ] SELECT `product`.*,pivot.theme_id AS pivot__theme_id,pivot.product_id AS pivot__product_id FROM `product` INNER JOIN `theme_product` `pivot` ON `pivot`.`product_id`=`product`.`id` WHERE  `pivot`.`theme_id` = 1 [ RunTime:0.000930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.001312s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` = 49 [ RunTime:0.000598s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` = 16 [ RunTime:0.000949s ]
+---------------------------------------------------------------
+[ 2019-02-05T21:34:52+08:00 ] 127.0.0.1 GET z.cn/api/v1/theme/1?XDEBUG_SESSION_START=19478
+[运行时间：43.820331s] [吞吐率：0.02req/s] [内存消耗：2,972.18kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000660s ] mysql:host=127.0.0.1;dbname=zerg;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme` [ RunTime:0.002048s ]
+[ sql ] [ SQL ] SELECT * FROM `theme` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000630s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `theme_product` [ RunTime:0.001268s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.001342s ]
+[ sql ] [ SQL ] SELECT `product`.*,pivot.theme_id AS pivot__theme_id,pivot.product_id AS pivot__product_id FROM `product` INNER JOIN `theme_product` `pivot` ON `pivot`.`product_id`=`product`.`id` WHERE  `pivot`.`theme_id` = 1 [ RunTime:0.000786s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.001385s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` = 49 [ RunTime:0.000606s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` = 16 [ RunTime:0.000564s ]
