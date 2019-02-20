@@ -17,7 +17,7 @@ class Banner extends BaseModel
     protected $hidden = ['delete_time'];
 //    建立数据库关系
     public function items(){
-        return $this->hasMany('Banner_item','banner_id','id');
+        return $this->hasMany('Banner_item','banner_id','id'); //一对多
     }
 //    数据库查询语句
     public static function getBannerByID($id){

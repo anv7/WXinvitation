@@ -2,7 +2,6 @@
 
 namespace app\api\model;
 
-use think\Model;
 
 class image extends BaseModel
 {
@@ -11,4 +10,7 @@ class image extends BaseModel
    public function getUrlAttr($value, $data){
        return $this->prefixImgUrl($value, $data);
    }
+//    public function image(){
+//        return $this->belongsTo('image');
+//    }
 }
