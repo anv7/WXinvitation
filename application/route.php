@@ -18,3 +18,4 @@ Route::get('hello', 'sample/Test/hello');
 //👇使用动态的写法 👆静态写法
 Route::get('api/:version/banner/:id', 'api/:version.banner/getBanner');
 Route::get('api/:version/background/:id','api/:version.background/getBackground');
+Route::get('api/:version/docs/:id','api/:version.docs/getDocs');
