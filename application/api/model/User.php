@@ -16,4 +16,8 @@ class User extends BaseModel
         $user = self::where('openid','=',$openid)->find();
         return $user;
     }
+
+    public function userInfo(){
+        return $this->hasOne('UserInfo','uid','id');
+    }
 }

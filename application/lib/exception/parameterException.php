@@ -8,7 +8,10 @@
 
 namespace app\lib\exception;
 
-
+/**
+ * Class ParameterException
+ * 通用参数类异常错误
+ */
 class parameterException extends BaseException
 {
     public $code = 400;

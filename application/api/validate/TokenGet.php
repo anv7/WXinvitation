@@ -15,6 +15,6 @@ class TokenGet extends BaseValidate
         'code'=>'require|isNotEmpty'
     ];
     public $message = [
-        'code' => '没有code还想获取Token，做梦哦'
+        'code' => '没有微信login.code还想获取Token，做梦哦'
     ];
 }

@@ -19,6 +19,7 @@ class UserToken extends Token
     protected $wxAppID;
     protected $wxAppSecret;
     protected $wxLoginUrl;
+
     function __construct($code){
         $this->code = $code;
         $this->wxAppID = config('wx.app_id');
@@ -64,7 +65,8 @@ class UserToken extends Token
         }
         $CachedValue = $this->prepareCachedValue($wxResult, $uid);
         $token = $this->saveToCache($CachedValue);
-        return $token;
+        $resData = array($token,$uid);
+        return $resData;
     }
 
     private function saveToCache($CachedValue){

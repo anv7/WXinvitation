@@ -16,12 +16,14 @@ use app\api\validate\TokenGet;
 
 class Token
 {
+//    接受微信小程序的wx.login()方法的code码
     public function getToken($code=''){
         (new TokenGet())->goCheck();
         $ut = new UserToken($code);
-        $token = $ut->get();
+        $resData = $ut->get();
         return [
-            'token' => $token
+            'token' =>$resData[0],
+            'uid' =>$resData[1]
         ];
     }
 //    第三方应用获取令牌

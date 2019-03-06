@@ -19,3 +19,10 @@ Route::get('hello', 'sample/Test/hello');
 Route::get('api/:version/banner/:id', 'api/:version.banner/getBanner');
 Route::get('api/:version/background/:id','api/:version.background/getBackground');
 Route::get('api/:version/docs/:id','api/:version.docs/getDocs');
+
+Route::post('api/:version/token/user', 'api/:version.Token/getToken');//颁发个令牌
+
+Route::get('api/:version/form/formArrive','api/:version.FormElement/getFormArrive');
+
+Route::post('api/:version/basicinfo','api/:version.FormInfo/BasicInfo');
+
