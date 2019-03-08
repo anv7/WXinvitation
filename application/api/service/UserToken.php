@@ -65,8 +65,7 @@ class UserToken extends Token
         }
         $CachedValue = $this->prepareCachedValue($wxResult, $uid);
         $token = $this->saveToCache($CachedValue);
-        $resData = array($token,$uid);
-        return $resData;
+        return $token;
     }
 
     private function saveToCache($CachedValue){

@@ -13,6 +13,6 @@ class BasicInfo extends BaseValidate
 {
     protected $rule = [
         'name' => 'require|isNotEmpty',
-        'phone' => 'require|isMobile',
+        'phone' => 'require',
     ];
 }

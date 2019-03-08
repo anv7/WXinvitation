@@ -20,10 +20,9 @@ class Token
     public function getToken($code=''){
         (new TokenGet())->goCheck();
         $ut = new UserToken($code);
-        $resData = $ut->get();
+        $token = $ut->get();
         return [
-            'token' =>$resData[0],
-            'uid' =>$resData[1]
+            'token' => $token
         ];
     }
 //    第三方应用获取令牌
