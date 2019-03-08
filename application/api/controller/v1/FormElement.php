@@ -17,12 +17,15 @@ class FormElement
 
             'firType'=>'time',
             "firQuestion"=>'预计到达时间',
+            'firField'=>'arriveTime',
 
             'secType'=>'time',
             "secQuestion"=> '预计返程时间',
+            'secField'=>'backTime',
 
             'thrType'=>'radio',
             "thrQuestion"=> '是否住宿',
+            'thrField'=>'stay',
             'radioValue'=> [
                 'value_1'=>'需要',
                 'value_2'=>'不需要',
@@ -33,21 +36,20 @@ class FormElement
             'doIt'=>true,
 
             'firType'=>'text',
+            'firField'=>'retinueName',
             "firQuestion"=> '随行人员姓名',
 
             'secType'=>'text',
+            'secField'=>'retinuePhone',
 //            需要收集手机号 xxxModel建议为number
             'secModel'=>'number',
             "secQuestion"=> '随行人员手机号',
 
-            'thrType'=>'number',
+            'thrType'=>'text',
+            'thrModel'=>'number',
+            'thrField'=>'total',
             "thrQuestion"=> '携员人数(含自己)',
 
-        ],
-        'retinues'=>[
-            'doIt'=>true,
-
-            "secQuestion"=> '是否住宿'
         ],
 
     ];
