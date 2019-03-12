@@ -12,7 +12,7 @@ namespace app\api\validate;
 class BasicInfo extends BaseValidate
 {
     protected $rule = [
-        'name' => 'require|isNotEmpty',
-        'phone' => 'require',
+        'key' => 'require|isNotEmpty',
+        'value' => 'require',
     ];
 }

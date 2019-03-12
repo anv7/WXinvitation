@@ -11,5 +11,7 @@ namespace app\api\model;
 
 class UserInfo extends BaseModel
 {
-
+    public static function findData($key){
+        return self::where('key','=',$key)->find();
+    }
 }

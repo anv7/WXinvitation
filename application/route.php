@@ -23,6 +23,8 @@ Route::get('api/:version/docs/:id','api/:version.docs/getDocs');
 Route::post('api/:version/token/user', 'api/:version.Token/getToken');//颁发个令牌
 
 Route::get('api/:version/form/formArrive','api/:version.FormElement/getFormArrive');
+Route::get('api/:version/form/basicQuestions','api/:version.FormElement/getBasicQuestions');
+
 
 Route::post('api/:version/basicinfo','api/:version.FormInfo/BasicInfo');
-
+Route::post('api/:version/basicanswer','api/:version.FormInfo/BasicAnswer');

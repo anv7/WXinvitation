@@ -18,6 +18,11 @@ class User extends BaseModel
     }
 
     public function userInfo(){
-        return $this->hasOne('UserInfo','uid','id');
+        return $this->hasMany('UserInfo','uid','id');
     }
+
+
+//    public function userAnswer(){
+//        return $this->hasMany('UserInfo','uid','id');
+//    }
 }
