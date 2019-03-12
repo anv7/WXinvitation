@@ -56,7 +56,6 @@ class FormInfo
                 'value'=>$value
             ]);
         }
-
     }
 
     public function basicAnswer(){
@@ -74,4 +73,5 @@ class FormInfo
         }
         return new SuccessMessage();
     }
+
 }
