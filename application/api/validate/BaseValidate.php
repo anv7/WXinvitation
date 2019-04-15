@@ -66,7 +66,7 @@ class BaseValidate extends Validate
     }
 
     //没有使用TP的正则验证，集中在一处方便以后修改
-    //不推荐使用正则，因为复用性太差
+    //为啥不推荐使用正则，因为复用性太差
     //手机号的验证规则
     protected function isMobile($value)
     {

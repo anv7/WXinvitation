@@ -43,6 +43,7 @@ class FormInfo
 
 
     public function set($uid,$key,$value){
+//        $uid会好点？
         $config = UserInfoModel::findData($key);
         $user = UserModel::get($uid);
         if(!$config){

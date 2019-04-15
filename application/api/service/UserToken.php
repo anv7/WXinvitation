@@ -52,7 +52,7 @@ class UserToken extends Token
 //        如果存在，则不处理，不存在就新增一条user记录
 //        生成令牌，准备缓存数据，写入缓存
 //        把令牌返回到客户端去
-//        为什么要写缓存，写缓存里面需要有什么？
+//        要写缓存
 //        key:令牌
 //        value：wxResult,uid,scope(权限的控制)
         $openid = $wxResult['openid'];

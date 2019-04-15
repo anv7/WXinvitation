@@ -6,8 +6,8 @@
  * Time: 19:34
  */
 return[
-    'app_id' => 'wxb8104abcafe44d8c',
-    'app_secret' => 'd600fa4e29e9edff27e9bfcefdde5d23',
+    'app_id' => 'wxdfb4904fc7b5810d',
+    'app_secret' => '037cc4b860b63c887180dbb8d72f957e',
     'login_url' =>
         'https://api.weixin.qq.com/sns/jscode2session?appid=%s&secret=%s&js_code=%s&grant_type=authorization_code'
 
