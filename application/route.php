@@ -27,3 +27,5 @@ Route::get('api/:version/form/basicQuestions','api/:version.FormElement/getBasic
 
 Route::post('api/:version/basicinfo','api/:version.FormInfo/BasicInfo');
 Route::post('api/:version/basicanswer','api/:version.FormInfo/BasicAnswer');
+
+Route::post('api/:version/checkinfo','api/:version.CheckUidInfo/checkInfo');

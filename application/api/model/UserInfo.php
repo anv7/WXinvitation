@@ -14,4 +14,7 @@ class UserInfo extends BaseModel
     public static function findData($key){
         return self::where('key','=',$key)->find();
     }
+    public static function checkUidInfo($uid){
+        return self::where('uid',$uid)->select();
+    }
 }
