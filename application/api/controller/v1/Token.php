@@ -21,9 +21,10 @@ class Token
         (new TokenGet())->goCheck();
         $ut = new UserToken($code);
         $token = $ut->get();
-        return [
-            'token' => $token
-        ];
+        return $token;
+//        return [
+//            'token' => $token
+//        ];
     }
 //    第三方应用获取令牌
     public function getAppToken($ac='',$se=''){
